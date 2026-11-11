@@ -1,0 +1,12 @@
+{
+  "name": "coleccion-cine",
+  "version": "1.0.0",
+  "description": "Entrega 1 - Gestión de colecciones cinematográficas: prototipo estático navegable con Node.js y Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

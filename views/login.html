@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión · MiColección Cine</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/">Mi<span>Colección</span> Cine</a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/login" aria-current="page">Iniciar sesión</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="card">
+      <h1>Iniciar sesión</h1>
+      <p>Accede a tu colección personal de películas.</p>
+
+      <form id="form-login" novalidate>
+        <div class="field">
+          <label for="usuario">Nombre de usuario</label>
+          <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn">Entrar</button>
+        <div id="mensaje-login" class="form-message" role="status" aria-live="polite" hidden></div>
+      </form>
+
+      <p class="form-links">¿Dudas? <a href="/contacto">Escríbenos</a> · <a href="/">Volver al inicio</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MiColección Cine · Prototipo Entrega 1</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

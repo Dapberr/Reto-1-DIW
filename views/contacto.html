@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · MiColección Cine</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/">Mi<span>Colección</span> Cine</a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/login">Iniciar sesión</a></li>
+          <li><a href="/contacto" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="card">
+      <h1>Contacto</h1>
+      <p>¿Tienes una pregunta o sugerencia? Cuéntanosla.</p>
+
+      <form id="form-contacto" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar mensaje</button>
+        <div id="mensaje-contacto" class="form-message" role="status" aria-live="polite" hidden></div>
+      </form>
+
+      <p class="form-links"><a href="/">Volver al inicio</a> · <a href="/login">Iniciar sesión</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 MiColección Cine · Prototipo Entrega 1</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
